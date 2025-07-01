@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المدخول والمصروف</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 المدخول والمصروف</h1>
+
+    <form id="transaction-form">
+      <select id="type" required>
+        <option value="">اختر النوع</option>
+        <option value="دخل">💵 مدخول</option>
+        <option value="مصروف">💸 مصروف</option>
+      </select>
+      <input type="number" id="amount" placeholder="المبلغ (جنيه)" required>
+      <input type="text" id="note" placeholder="ملاحظة (اختياري)">
+      <button type="submit">إضافة</button>
+    </form>
+
+    <h3>الرصيد الحالي: <span id="balance">0</span> جنيه</h3>
+
+    <div id="transaction-list"></div>
+    
+    <br>
+    <a href="index.html">🔁 الرجوع إلى سجل الديون</a>
+  </div>
+
+  <script src="transactions.js"></script>
+</body>
+</html>
