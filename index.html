@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>سجل الديون</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📒 سجل الديون</h1>
+
+    <form id="debt-form">
+      <input type="text" id="name" placeholder="اسم العميل" required>
+      <input type="number" id="amount" placeholder="المبلغ (جنيه)" required>
+      <button type="submit">إضافة</button>
+    </form>
+
+    <div id="debt-list"></div>
+    
+    <br>
+    <a href="transactions.html">💰 الانتقال إلى المدخول والمصروف</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
